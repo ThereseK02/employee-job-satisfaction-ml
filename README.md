@@ -357,11 +357,11 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 
 ### Model Accuracy Before and After SMOTE
 
-![Model Accuracy Before and After SMOTE](./images/Model%20Accuracy%20Before%20and%20After%20SMOTE.png)
+![Model Accuracy Before and After SMOTE](./images/model_accuracy_before_and_after_smote.png)
 
-### Model F1-Score Before and After SMOTE
+### Model F1-Score Before and After Tuning
 
-![Model F1-Score Before and After SMOTE](./images/F1_Score%20Before%20and%20After%20SMOTE.png)
+![Model F1-Score Before and After Tuning](./images/model_f1_score_before_and_after_tuning.png)
 
 ### Random Forest Confusion Matrix After Tuning
 
@@ -369,7 +369,7 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 
 ### SHAP Feature Importance Analysis
 
-![SHAP Feature Importance](./images/Shap-Based%20Feature%20Importance%20Analysis.png)
+![SHAP Feature Importance](./images/shap_based_feature_importance_analysis.png)
 
 ### SHAP Summary Plot
 

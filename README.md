@@ -1,25 +1,19 @@
 # Employee Job Satisfaction Prediction Using Machine Learning
 
 
-
 ## Project Overview
-
 
 
 This project predicts employee job satisfaction using machine learning models trained on workplace-related features. The project includes exploratory data analysis (EDA), data preprocessing, feature engineering, class imbalance handling, model training, hyperparameter tuning, and explainable AI techniques.
 
 
-
 The primary goal of this study is to identify the most important workplace factors influencing employee job satisfaction while comparing the predictive performance of multiple machine learning algorithms.
-
 
 
 ---
 
 
-
 ## Project Highlights
-
 
 
 - End-to-end machine learning workflow
@@ -325,20 +319,15 @@ The analysis revealed that workplace and well-being related factors played a maj
 - Sleep Quality
 
 
-
 SHAP analysis improved model transparency and provided meaningful insights into the key drivers of employee satisfaction.
-
 
 
 ---
 
 
-
 ## Results
 
-
 The evaluation results demonstrated that ensemble learning methods consistently outperformed simpler baseline models across multiple performance metrics.
-
 
 ### Key Findings
 
@@ -355,39 +344,103 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 ---
 ## Visual Results
 
-### Model Accuracy Before and After SMOTE
+### Exploratory Data Analysis
 
-![Model Accuracy Before and After SMOTE](./images/model_accuracy_before_and_after_smote.png)
+#### Correlation Matrix Heatmap
 
-### Model F1-Score Before and After Tuning
+![Correlation Matrix Heatmap](./images/correlation_matrix_heatmap.png)
+
+#### Outlier Analysis
+
+![Outlier Analysis](./images/boxplots_outliers_analysis.png)
+
+![Outlier Analysis Continued](./images/boxplots_outliers_analysis_cont.png)
+
+### Baseline Model Comparison
+
+![Baseline Model Comparison](./images/baseline_model_comparison.png)
+
+### Class Imbalance Handling with SMOTE
+
+#### Model Accuracy Before and After SMOTE
+
+![Model Accuracy Before and After SMOTE](./images/model_accuracy_smote.png)
+
+#### Model F1-Score Before and After SMOTE
+
+![Model F1-Score Before and After SMOTE](./images/model_f1_score_smote.png)
+
+
+### Hyperparameter Tuning Results
+
+#### Model Accuracy Before and After Tuning
+
+![Model Accuracy Before and After Tuning](./images/model_accuracy_before_and_after_tuning.png)
+
+#### Model F1-Score Before and After Tuning
 
 ![Model F1-Score Before and After Tuning](./images/model_f1_score_before_and_after_tuning.png)
 
-### Random Forest Confusion Matrix After Tuning
 
-![Random Forest Confusion Matrix After Tuning](./images/Random%20Forest%20Confusion%20Matrix%20After%20Tuning.png)
+### Confusion Matrix Evaluation
 
-### SHAP Feature Importance Analysis
+#### Logistic Regression
 
-![SHAP Feature Importance](./images/shap_based_feature_importance_analysis.png)
+![Logistic Regression](./images/logistic_regression_confusion_matrix.png)
 
-### SHAP Summary Plot
+#### Decision Tree
 
-![SHAP Summary Plot](./images/SHAP.Summary_plot(shap_values_avg).png)
+![Decision Tree](./images/decision_tree_confusion_matrix.png)
+
+#### Random Forest
+
+![Random Forest](./images/random_forest_confusion_matrix.png)
+
+#### Random Forest After Tuning
+
+![Random Forest After Tuning](./images/random_forest_confusion_matrix_tuned.png)
+
+#### SVM
+
+![SVM](./images/svm_confusion_matrix.png)
+
+#### XGBoost
+
+![XGBoost](./images/xgboost_confusion_matrix.png)
+
+#### LightGBM
+
+![LightGBM](./images/lightgbm_confusion_matrix.png)
+
+
+### Explainable AI (SHAP)
+
+#### SHAP Feature Importance Analysis
+
+![SHAP Feature Importance](./images/shap_feature_importance.png)
+
+#### SHAP Summary Plot
+
+![SHAP Summary Plot](./images/shap_summary_plot.png)
+
+
+### Streamlit Application
+
+#### Streamlit Home Interface
+
+![Streamlit Home](./images/streamlit_home.png)
+
+#### Prediction Interface
+
+![Prediction Interface](./images/streamlit_prediction.png)
 
 ---
 
 
 ## Project Structure
 
-
-
 ```text
-
-
-
 employee-job-satisfaction-ml/
-
 
 ├── app/
 │   └── app.py
@@ -397,14 +450,23 @@ employee-job-satisfaction-ml/
 │   └── employee_survey_cleaned.csv
 
 ├── images/
-│   ├── Baseline Model Comparison.png
-│   ├── Correlation_Matrix_Heatmap.png
+│   ├── baseline_model_comparison.png
+│   ├── correlation_matrix_heatmap.png
 │   ├── boxplots_outliers_analysis.png
-│   ├── boxplots_outliers_analysis (cont.).png
-│   ├── Random Forest Confusion Matrix.png
-│   ├── Random Forest Confusion Matrix After Tuning.png
-│   ├── SHAP.Summary_plot(shap_values_avg).png
-│   ├── Shap-Based Feature Importance Analysis.png
+│   ├── boxplots_outliers_analysis_cont.png
+│   ├── model_accuracy_smote.png
+│   ├── model_f1_score_smote.png
+│   ├── model_accuracy_before_and_after_tuning.png
+│   ├── model_f1_score_before_and_after_tuning.png
+│   ├── logistic_regression_confusion_matrix.png
+│   ├── decision_tree_confusion_matrix.png
+│   ├── random_forest_confusion_matrix.png
+│   ├── random_forest_confusion_matrix_tuned.png
+│   ├── svm_confusion_matrix.png
+│   ├── xgboost_confusion_matrix.png
+│   ├── lightgbm_confusion_matrix.png
+│   ├── shap_summary_plot.png
+│   ├── shap_feature_importance.png
 │   ├── streamlit_home.png
 │   └── streamlit_prediction.png
 
@@ -417,7 +479,6 @@ employee-job-satisfaction-ml/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-
 ```
 
 ---
@@ -425,9 +486,7 @@ employee-job-satisfaction-ml/
 ## How to Run the Project
 
 
-
 ### Clone the Repository
-
 
 
 ```bash
@@ -435,8 +494,6 @@ employee-job-satisfaction-ml/
 git clone https://github.com/ThereseK02/employee-job-satisfaction-ml.git
 
 ```
-
-
 
 ### Navigate to the Project Folder
 
@@ -536,42 +593,36 @@ Potential future improvements include:
 
 - Integration with HR analytics systems
 
-
-
 ---
 
+## Key Contributions
 
+- Developed a complete end-to-end machine learning workflow for employee job satisfaction prediction
+- Compared multiple baseline and advanced ensemble learning algorithms
+- Applied class imbalance handling using class weighting and SMOTE
+- Performed hyperparameter optimization using RandomizedSearchCV
+- Integrated SHAP explainability for model interpretability
+- Built a Streamlit-based deployment prototype for interactive predictions
+- Evaluated model robustness using multiple performance metrics and cross-validation
+
+---
 
 ## Final Conclusion
 
 
-
 In this project, I developed a complete machine learning workflow to predict employee job satisfaction by combining exploratory data analysis, data preprocessing, model training, and performance evaluation.
-
-
 
 To address class imbalance, I initially applied class weighting techniques in selected models and later refined the approach using SMOTE to improve the representation of minority classes. Multiple machine learning models were trained, including both baseline and advanced ensemble algorithms, and their performance was further improved through hyperparameter tuning.
 
-
-
 All models were evaluated using consistent performance metrics, including accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrices. The evaluation results demonstrated that ensemble methods consistently outperformed simpler models, with Random Forest and LightGBM achieving the strongest overall performance.
-
-
 
 Based on cross-validation results, test-set performance, and model stability, Random Forest was selected as the final model because it provided the best balance among predictive accuracy, robustness, and generalization capability.
 
-
-
 To improve model interpretability, SHAP (SHapley Additive exPlanations) analysis was applied to identify how individual features influenced prediction outcomes. The analysis revealed that workplace and well-being factors — including work environment, work-life balance, workload, stress, and sleep — played a significant role in determining employee job satisfaction.
-
-
 
 Overall, this project demonstrates the importance of combining effective class imbalance handling, comprehensive model evaluation, ensemble learning, and explainable AI techniques to build reliable, interpretable, and actionable predictive models.
 
-
-
 ---
-
 
 
 ## Author

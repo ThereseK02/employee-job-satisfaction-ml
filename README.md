@@ -354,6 +354,7 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 
 ---
 ## Visual Results
+## Visual Results
 
 ### Model Accuracy Before and After SMOTE
 
@@ -361,7 +362,7 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 
 ### Model F1-Score Before and After SMOTE
 
-![F1 Score Before and After SMOTE](./images/F1_Score%20Before%20and%20After%20SMOTE.png)
+![Model F1-Score Before and After SMOTE](./images/F1_Score%20Before%20and%20After%20SMOTE.png)
 
 ### Random Forest Confusion Matrix After Tuning
 

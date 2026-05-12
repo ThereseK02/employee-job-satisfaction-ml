@@ -354,7 +354,6 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 
 ---
 ## Visual Results
-## Visual Results
 
 ### Model Accuracy Before and After SMOTE
 

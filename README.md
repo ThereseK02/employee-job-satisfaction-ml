@@ -540,6 +540,8 @@ The deployed application will allow users to:
 
 \---
 
+
+
 \## Application Preview
 
 
@@ -548,7 +550,7 @@ The deployed application will allow users to:
 
 
 
-!\[Streamlit Home](images/streamlit\_home.png)
+<img src="images/streamlit\_home.png" alt="Streamlit Home Interface" width="800"/>
 
 
 
@@ -556,7 +558,9 @@ The deployed application will allow users to:
 
 
 
-!\[Prediction Interface](images/streamlit\_prediction.png)
+<img src="images/streamlit\_prediction.png" alt="Prediction Interface" width="800"/>
+
+
 
 \---
 

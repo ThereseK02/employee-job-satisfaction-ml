@@ -337,9 +337,7 @@ SHAP analysis improved model transparency and provided meaningful insights into 
 ## Results
 
 
-
 The evaluation results demonstrated that ensemble learning methods consistently outperformed simpler baseline models across multiple performance metrics.
-
 
 
 ### Key Findings
@@ -354,10 +352,30 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 
 - SHAP analysis enhanced model interpretability and transparency
 
+---
+## Visual Results
 
+### Model Accuracy Before and After SMOTE
+
+![Model Accuracy Before and After SMOTE](./images/Model%20Accuracy%20Before%20and%20After%20SMOTE.png)
+
+### Model F1-Score Before and After SMOTE
+
+![F1 Score Before and After SMOTE](./images/F1_Score%20Before%20and%20After%20SMOTE.png)
+
+### Random Forest Confusion Matrix After Tuning
+
+![Random Forest Confusion Matrix After Tuning](./images/Random%20Forest%20Confusion%20Matrix%20After%20Tuning.png)
+
+### SHAP Feature Importance Analysis
+
+![SHAP Feature Importance](./images/Shap-Based%20Feature%20Importance%20Analysis.png)
+
+### SHAP Summary Plot
+
+![SHAP Summary Plot](./images/SHAP.Summary_plot(shap_values_avg).png)
 
 ---
-
 
 
 ## Project Structure
@@ -412,7 +430,7 @@ employee-job-satisfaction-ml/
 
 
 
-│   ├── class\\\_distribution.png
+│   ├── boxplots_outliers\\\_analysis.png
 
 
 

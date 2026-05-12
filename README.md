@@ -1,8 +1,8 @@
-\# Employee Job Satisfaction Prediction Using Machine Learning
+# Employee Job Satisfaction Prediction Using Machine Learning
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -14,33 +14,33 @@ The primary goal of this study is to identify the most important workplace facto
 
 
 
-\---
+---
 
 
 
-\## Project Highlights
+## Project Highlights
 
 
 
-\- End-to-end machine learning workflow
+- End-to-end machine learning workflow
 
-\- Class imbalance handling using Class Weights and SMOTE
+- Class imbalance handling using Class Weights and SMOTE
 
-\- Hyperparameter optimization using RandomizedSearchCV
+- Hyperparameter optimization using RandomizedSearchCV
 
-\- Ensemble learning with Random Forest, XGBoost, and LightGBM
+- Ensemble learning with Random Forest, XGBoost, and LightGBM
 
-\- Explainable AI using SHAP
+- Explainable AI using SHAP
 
-\- Streamlit deployment preparation
-
-
-
-\---
+- Streamlit deployment preparation
 
 
 
-\## Problem Statement
+---
+
+
+
+## Problem Statement
 
 
 
@@ -52,11 +52,11 @@ This project applies supervised machine learning techniques to predict employee 
 
 
 
-\---
+---
 
 
 
-\## Dataset Description
+## Dataset Description
 
 
 
@@ -64,87 +64,87 @@ The dataset contains employee-related information and workplace characteristics 
 
 
 
-\### Dataset Characteristics
+### Dataset Characteristics
 
 
 
-\- Multiple numerical and categorical features
+- Multiple numerical and categorical features
 
-\- Multi-class target variable representing job satisfaction levels
+- Multi-class target variable representing job satisfaction levels
 
-\- Presence of class imbalance
+- Presence of class imbalance
 
-\- Workplace and well-being related attributes
-
-
-
-\### Example Features
+- Workplace and well-being related attributes
 
 
 
-\- Work Environment
-
-\- Work-Life Balance
-
-\- Workload
-
-\- Stress Level
-
-\- Sleep Quality
-
-\- Salary Information
-
-\- Career Growth
-
-\- Years at Company
+### Example Features
 
 
 
-\---
+- Work Environment
+
+- Work-Life Balance
+
+- Workload
+
+- Stress Level
+
+- Sleep Quality
+
+- Salary Information
+
+- Career Growth
+
+- Years at Company
 
 
 
-\## Technologies Used
+---
 
 
 
-\### Programming Language
-
-\- Python
+## Technologies Used
 
 
 
-\### Libraries and Frameworks
+### Programming Language
 
-\- Pandas
-
-\- NumPy
-
-\- Scikit-learn
-
-\- XGBoost
-
-\- LightGBM
-
-\- SHAP
-
-\- Matplotlib
-
-\- Seaborn
-
-\- Imbalanced-learn (SMOTE)
-
-\- Joblib
-
-\- Streamlit
+- Python
 
 
 
-\---
+### Libraries and Frameworks
+
+- Pandas
+
+- NumPy
+
+- Scikit-learn
+
+- XGBoost
+
+- LightGBM
+
+- SHAP
+
+- Matplotlib
+
+- Seaborn
+
+- Imbalanced-learn (SMOTE)
+
+- Joblib
+
+- Streamlit
 
 
 
-\## Techniques Used
+---
+
+
+
+## Techniques Used
 
 
 
@@ -152,27 +152,27 @@ The project applied several machine learning and data science techniques to impr
 
 
 
-\### Data Preprocessing
+### Data Preprocessing
 
-\- Missing value handling
+- Missing value handling
 
-\- Duplicate removal
+- Duplicate removal
 
-\- Feature encoding
+- Feature encoding
 
-\- Boolean conversion
+- Boolean conversion
 
-\- Outlier handling using IQR
+- Outlier handling using IQR
 
-\- Feature scaling
+- Feature scaling
 
-\- Low variance feature analysis
+- Low variance feature analysis
 
-\- Multicollinearity analysis using Correlation and VIF
+- Multicollinearity analysis using Correlation and VIF
 
 
 
-\### Machine Learning Models
+### Machine Learning Models
 
 
 
@@ -180,57 +180,57 @@ The project evaluated multiple supervised machine learning algorithms, including
 
 
 
-\#### Baseline Models
+#### Baseline Models
 
-\- Logistic Regression
+- Logistic Regression
 
-\- Decision Tree
+- Decision Tree
 
-\- Support Vector Machine (SVM)
-
-
-
-\#### Advanced Ensemble Models
-
-\- Random Forest
-
-\- XGBoost
-
-\- LightGBM
+- Support Vector Machine (SVM)
 
 
 
-\### Class Imbalance Handling
+#### Advanced Ensemble Models
 
-\- Class weighting techniques
+- Random Forest
 
-\- SMOTE (Synthetic Minority Oversampling Technique)
+- XGBoost
 
-
-
-\### Model Optimization
-
-\- Hyperparameter tuning using RandomizedSearchCV
-
-\- Cross-validation
-
-\- Performance optimization across baseline and advanced models
-
-\- Model performance evaluation
+- LightGBM
 
 
 
-\### Explainable AI
+### Class Imbalance Handling
 
-\- SHAP (SHapley Additive exPlanations) for model interpretability, feature importance analysis, and understanding prediction behavior
+- Class weighting techniques
 
-
-
-\---
+- SMOTE (Synthetic Minority Oversampling Technique)
 
 
 
-\## Evaluation Metrics
+### Model Optimization
+
+- Hyperparameter tuning using RandomizedSearchCV
+
+- Cross-validation
+
+- Performance optimization across baseline and advanced models
+
+- Model performance evaluation
+
+
+
+### Explainable AI
+
+- SHAP (SHapley Additive exPlanations) for model interpretability, feature importance analysis, and understanding prediction behavior
+
+
+
+---
+
+
+
+## Evaluation Metrics
 
 
 
@@ -238,27 +238,27 @@ The models were evaluated using the following performance metrics:
 
 
 
-\- Accuracy
+- Accuracy
 
-\- Precision
+- Precision
 
-\- Recall
+- Recall
 
-\- F1-Score
+- F1-Score
 
-\- ROC-AUC
+- ROC-AUC
 
-\- Confusion Matrix
+- Confusion Matrix
 
-\- Cross-Validation Scores
-
-
-
-\---
+- Cross-Validation Scores
 
 
 
-\## Final Model Selection
+---
+
+
+
+## Final Model Selection
 
 
 
@@ -266,13 +266,13 @@ The final model was selected based on:
 
 
 
-\- Cross-validation performance
+- Cross-validation performance
 
-\- Test set performance
+- Test set performance
 
-\- Overall model stability
+- Overall model stability
 
-\- Generalization capability
+- Generalization capability
 
 
 
@@ -296,11 +296,11 @@ Based on these findings, Random Forest was selected as the final model for this 
 
 
 
-\---
+---
 
 
 
-\## Explainable AI with SHAP
+## Explainable AI with SHAP
 
 
 
@@ -312,17 +312,17 @@ The analysis revealed that workplace and well-being related factors played a maj
 
 
 
-\### Most Influential Features
+### Most Influential Features
 
-\- Work Environment
+- Work Environment
 
-\- Work-Life Balance
+- Work-Life Balance
 
-\- Workload
+- Workload
 
-\- Stress
+- Stress
 
-\- Sleep Quality
+- Sleep Quality
 
 
 
@@ -330,11 +330,11 @@ SHAP analysis improved model transparency and provided meaningful insights into 
 
 
 
-\---
+---
 
 
 
-\## Results
+## Results
 
 
 
@@ -342,25 +342,25 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 
 
 
-\### Key Findings
+### Key Findings
 
-\- Random Forest achieved the strongest overall performance
+- Random Forest achieved the strongest overall performance
 
-\- LightGBM and XGBoost also demonstrated competitive predictive capability
+- LightGBM and XGBoost also demonstrated competitive predictive capability
 
-\- Ensemble models improved predictive accuracy, robustness, and generalization
+- Ensemble models improved predictive accuracy, robustness, and generalization
 
-\- SMOTE improved minority-class prediction performance
+- SMOTE improved minority-class prediction performance
 
-\- SHAP analysis enhanced model interpretability and transparency
-
-
-
-\---
+- SHAP analysis enhanced model interpretability and transparency
 
 
 
-\## Project Structure
+---
+
+
+
+## Project Structure
 
 
 
@@ -464,13 +464,13 @@ employee-job-satisfaction-ml/
 
 
 
-\---
+---
 
-\## How to Run the Project
+## How to Run the Project
 
 
 
-\### Clone the Repository
+### Clone the Repository
 
 
 
@@ -482,7 +482,7 @@ git clone https://github.com/ThereseK02/employee-job-satisfaction-ml.git
 
 
 
-\### Navigate to the Project Folder
+### Navigate to the Project Folder
 
 
 
@@ -494,7 +494,7 @@ cd employee-job-satisfaction-ml
 
 
 
-\### Install Dependencies
+### Install Dependencies
 
 
 
@@ -506,7 +506,7 @@ pip install -r requirements.txt
 
 
 
-\### Run the Streamlit Application
+### Run the Streamlit Application
 
 
 
@@ -518,7 +518,7 @@ streamlit run app/app.py
 
 
 
-\## Deployment
+## Deployment
 
 
 
@@ -530,39 +530,39 @@ The deployed application will allow users to:
 
 
 
-\- Input employee-related information
+- Input employee-related information
 
-\- Generate job satisfaction predictions
+- Generate job satisfaction predictions
 
-\- View model outputs interactively
-
-
-
-\---
+- View model outputs interactively
 
 
 
-\## Application Preview
+---
 
 
 
-\### Streamlit Home Interface
+## Application Preview
 
 
 
-!\[Streamlit Home](./images/streamlit\_home.png)
+### Streamlit Home Interface
 
 
 
-\### Prediction Interface
+![Streamlit Home](./images/streamlit_home.png)
 
 
 
-!\[Prediction Interface](./images/streamlit\_prediction.png)
+### Prediction Interface
 
-\---
 
-\## Future Improvements
+
+![Prediction Interface](./images/streamlit_prediction.png)
+
+---
+
+## Future Improvements
 
 
 
@@ -570,23 +570,23 @@ Potential future improvements include:
 
 
 
-\- Full Streamlit deployment
+- Full Streamlit deployment
 
-\- Real-time prediction dashboard
+- Real-time prediction dashboard
 
-\- Additional explainability visualizations
+- Additional explainability visualizations
 
-\- Deep learning model experimentation
+- Deep learning model experimentation
 
-\- Integration with HR analytics systems
-
-
-
-\---
+- Integration with HR analytics systems
 
 
 
-\## Final Conclusion
+---
+
+
+
+## Final Conclusion
 
 
 
@@ -614,11 +614,11 @@ Overall, this project demonstrates the importance of combining effective class i
 
 
 
-\---
+---
 
 
 
-\## Author
+## Author
 
 
 

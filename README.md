@@ -389,98 +389,36 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 employee-job-satisfaction-ml/
 
 
-
-│
-
-
-
 ├── app/
-
-
-
 │   └── app.py
 
-
-
-│
-
-
-
 ├── data/
-
-
-
-│   └── employee\\\_survey.csv
-
-
-
-│
-
-
+│   ├── employee_survey.csv
+│   └── employee_survey_cleaned.csv
 
 ├── images/
-
-
-
-│   ├── confusion\\\_matrix.png
-
-
-
-│   ├── shap\\\_summary.png
-
-
-
-│   ├── boxplots_outliers\\\_analysis.png
-
-
-
-│   └── model\\\_comparison.png
-
-
-
-│
-
-
+│   ├── Baseline Model Comparison.png
+│   ├── Correlation_Matrix_Heatmap.png
+│   ├── boxplots_outliers_analysis.png
+│   ├── boxplots_outliers_analysis (cont.).png
+│   ├── Random Forest Confusion Matrix.png
+│   ├── Random Forest Confusion Matrix After Tuning.png
+│   ├── SHAP.Summary_plot(shap_values_avg).png
+│   ├── Shap-Based Feature Importance Analysis.png
+│   ├── streamlit_home.png
+│   └── streamlit_prediction.png
 
 ├── models/
-
-
-
-│   └── random\\\_forest\\\_best\\\_model.pkl
-
-
-
-│
-
-
+│   └── best_model.pkl
 
 ├── notebooks/
-
-
-
-│   └── job\\\_satisfaction\\\_analysis.ipynb
-
-
-
-│
-
-
+│   └── job_satisfaction_analysis.ipynb
 
 ├── README.md
-
-
-
 ├── requirements.txt
-
-
-
 └── .gitignore
 
-
-
 ```
-
-
 
 ---
 

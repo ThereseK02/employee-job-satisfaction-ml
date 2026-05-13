@@ -631,9 +631,7 @@ Overall, this project demonstrates the importance of combining effective class i
 
 Therese Kabayanja
 
-
-
-Machine Learning Engineer | Data Science | Software Development
+Machine Learning Engineer | Data Scientist | Software Engineer
 
 
 

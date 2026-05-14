@@ -64,6 +64,10 @@ The dataset contains employee-related information and workplace characteristics 
 
 - Multiple numerical and categorical features
 
+- Original dataset contained 23 raw features before preprocessing and feature engineering
+
+- Final machine learning pipeline used 31 processed and engineered input features
+
 - Multi-class target variable representing job satisfaction levels
 
 - Presence of class imbalance
@@ -71,9 +75,7 @@ The dataset contains employee-related information and workplace characteristics 
 - Workplace and well-being related attributes
 
 
-
 ### Example Features
-
 
 
 - Work Environment
@@ -289,9 +291,7 @@ While LightGBM and XGBoost also delivered strong competitive performance, Random
 Based on these findings, Random Forest was selected as the final model for this classification task.
 
 
-
 ---
-
 
 
 ## Explainable AI with SHAP
@@ -423,32 +423,20 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 
 ![SHAP Summary Plot](./images/shap_summary_plot.png)
 
-
-### Streamlit Application
-
-#### Streamlit Home Interface
-
-![Streamlit Home](./images/streamlit_home.png)
-
-#### Prediction Interface
-
-![Prediction Interface](./images/streamlit_prediction.png)
-
 ---
-
 
 ## Project Structure
 
 ```text
 employee-job-satisfaction-ml/
-
+│
 ├── app/
 │   └── app.py
-
+│
 ├── data/
 │   ├── employee_survey.csv
 │   └── employee_survey_cleaned.csv
-
+│
 ├── images/
 │   ├── baseline_model_comparison.png
 │   ├── correlation_matrix_heatmap.png
@@ -467,18 +455,29 @@ employee-job-satisfaction-ml/
 │   ├── lightgbm_confusion_matrix.png
 │   ├── shap_summary_plot.png
 │   ├── shap_feature_importance.png
-│   ├── streamlit_home.png
-│   └── streamlit_prediction.png
-
+│   ├── top_interface.png
+│   ├── job_information.png
+│   ├── workplace_wellbeing_commute_info.png
+│   ├── prediction_result.png
+│   ├── top_interface1.png
+│   ├── job_information1.png
+│   ├── workplace_wellbeing_commute_info1.png
+│   ├── prediction_result1.png
+│   ├── top_interface2.png
+│   ├── job_information2.png
+│   ├── workplace_wellbeing_commute_info2.png
+│   └── prediction_result2.png
+│
 ├── models/
 │   └── best_model.pkl
-
+│
 ├── notebooks/
 │   └── job_satisfaction_analysis.ipynb
-
+│
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+
 ```
 
 ---
@@ -552,35 +551,81 @@ The deployed application will allow users to:
 
 
 ---
+## Interactive Streamlit Application
 
+An interactive Streamlit web application was developed to demonstrate real-time employee job satisfaction prediction using the trained machine learning model.
 
+The application:
+
+- Collects employee demographic, workplace, and commute information
+
+- Applies preprocessing and engineered feature mapping
+
+- Uses the trained Random Forest model for multiclass prediction
+
+- Predicts employee job satisfaction levels on a 1–5 scale
+
+- Displays business-friendly satisfaction interpretations
+
+### Key Application Features
+
+- Interactive user interface
+
+- Real-time prediction capability
+
+- Feature-engineered ML workflow integration
+
+- Structured business analytics inputs
+
+- End-to-end machine learning deployment prototype
+
+---
 
 ## Application Preview
 
+The Streamlit application was tested using multiple employee scenarios to demonstrate multiclass employee job satisfaction prediction behavior across different workplace conditions and employee profiles.
 
+---
 
-### Streamlit Home Interface
+### Employee Scenario 1
 
+![Top Interface](./images/top_interface.png)
 
+![Job Information](./images/job_information.png)
 
-![Streamlit Home](./images/streamlit_home.png)
+![Workplace Wellbeing and Commute Information](./images/workplace_wellbeing_commute_info.png)
 
+![Prediction Result](./images/prediction_result.png)
 
+---
 
-### Prediction Interface
+### Employee Scenario 2
 
+![Top Interface](./images/top_interface1.png)
 
+![Job Information](./images/job_information1.png)
 
-![Prediction Interface](./images/streamlit_prediction.png)
+![Workplace Wellbeing and Commute Information](./images/workplace_wellbeing_commute_info1.png)
 
+![Prediction Result](./images/prediction_result1.png)
+
+---
+
+### Employee Scenario 3
+
+![Top Interface](./images/top_interface2.png)
+
+![Job Information](./images/job_information2.png)
+
+![Workplace Wellbeing and Commute Information](./images/workplace_wellbeing_commute_info2.png)
+
+![Prediction Result](./images/prediction_result2.png)
 ---
 
 ## Future Improvements
 
 
-
 Potential future improvements include:
-
 
 
 - Full Streamlit deployment
@@ -598,11 +643,17 @@ Potential future improvements include:
 ## Key Contributions
 
 - Developed a complete end-to-end machine learning workflow for employee job satisfaction prediction
+
 - Compared multiple baseline and advanced ensemble learning algorithms
+
 - Applied class imbalance handling using class weighting and SMOTE
+
 - Performed hyperparameter optimization using RandomizedSearchCV
+
 - Integrated SHAP explainability for model interpretability
+
 - Built a Streamlit-based deployment prototype for interactive predictions
+
 - Evaluated model robustness using multiple performance metrics and cross-validation
 
 ---

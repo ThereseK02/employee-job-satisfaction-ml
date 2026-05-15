@@ -179,9 +179,5 @@ if st.button("Predict Job Satisfaction"):
 # ---------------------------------------------------
 # Footer
 # ---------------------------------------------------
-
 st.markdown("---")
-
-st.markdown(
-    "Developed by Therese Kabayanja | Machine Learning Engineer • Data Scientist • Software Engineer"
-)
+st.caption("Employee Job Satisfaction Prediction System")

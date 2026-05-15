@@ -77,28 +77,27 @@ The dataset contains employee-related information and workplace characteristics 
 
 ### Example Features
 
-
+- Gender
+- Marital Status
+- Education Level
+- Job Level
+- Experience
+- Department
+- Employment Type
 - Work Environment
-
 - Work-Life Balance
-
 - Workload
-
 - Stress Level
-
-- Sleep Quality
-
-- Salary Information
-
-- Career Growth
-
-- Years at Company
-
-
+- Sleep Hours
+- Physical Activity Hours
+- Commute Mode
+- Commute Distance
+- Number of Companies Worked
+- Team Size
+- Number of Direct Reports
+- Overtime Status
 
 ---
-
-
 
 ## Technologies Used
 

@@ -353,8 +353,6 @@ The evaluation results demonstrated that ensemble learning methods consistently 
 
 ![Outlier Analysis](./images/boxplots_outliers_analysis.png)
 
-![Outlier Analysis Continued](./images/boxplots_outliers_analysis_cont.png)
-
 ### Baseline Model Comparison
 
 ![Baseline Model Comparison](./images/baseline_model_comparison.png)
@@ -440,7 +438,6 @@ employee-job-satisfaction-ml/
 │   ├── baseline_model_comparison.png
 │   ├── correlation_matrix_heatmap.png
 │   ├── boxplots_outliers_analysis.png
-│   ├── boxplots_outliers_analysis_cont.png
 │   ├── model_accuracy_smote.png
 │   ├── model_f1_score_smote.png
 │   ├── model_accuracy_before_and_after_tuning.png

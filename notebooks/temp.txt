@@ -1,0 +1,32 @@
+"""
+Employee Job Satisfaction Prediction Using Machine Learning
+
+This project develops and evaluates multiple machine learning models
+for predicting employee job satisfaction using structured HR analytics data.
+
+Techniques:
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Classification Modeling
+- Model Evaluation & Comparison
+
+Models:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- SVM
+- XGBoost
+- LightGBM
+
+
+Author: Therese Kabayanja
+Machine Learning Engineer | Data Science | Software Engineer
+
+GitHub: https://github.com/ThereseK02
+LinkedIn: https://www.linkedin.com/in/tkabay65@gmail.com
+"""
+
+
+### An initial Exploratory data analysis begins by reading the dataset employee_surver.csv, commands df.shape, df.describe(), df.head(), and df.info() to get preliminary, meaningful information on the data. The dataset includes 3025 observations and 23 features involving 15 numerical, 7 categorical, and 1 boolean.
+### The dataset has one identifier column that should be dropped before modeling. I have to perform one-hot encoding or label/ordinal encoding for categorical variables and convert the boolean (haveOT) feature to 0/1. For the purpose of logistic regression modeling, I am required to scale numerical features.
+### There are no missing values.

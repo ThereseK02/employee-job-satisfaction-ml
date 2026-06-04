@@ -21,17 +21,14 @@ MODEL_PATH = Path(__file__).resolve().parent.parent / "models" / "best_model.pkl
 try:
     model = joblib.load(MODEL_PATH)
     model_loaded = True
+    st.success("Trained model loaded successfully.")
+except FileNotFoundError as e:
+    model_loaded = False
+    st.error(f"Model file not found: {MODEL_PATH}")
 except Exception as e:
     model_loaded = False
-    model_error = e
-
-if not model_loaded:
-    st.warning(f"""
-    Trained model file not found.
-
-    Please make sure this file exists:
-    {MODEL_PATH}
-    """)
+    st.error("Model file was found, but it could not be loaded.")
+    st.exception(e)
 
 st.markdown("""
 <style>

@@ -1,12 +1,12 @@
 pandas
 numpy
-scikit-learn==1.4.2
+scikit-learn
 matplotlib
 seaborn
 xgboost
 lightgbm
 shap
-imbalanced-learn==0.12.4
+imbalanced-learn
 joblib
 streamlit
 statsmodels

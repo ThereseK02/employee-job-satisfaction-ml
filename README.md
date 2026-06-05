@@ -51,24 +51,16 @@ The Employee Job Satisfaction Prediction application is publicly deployed on Str
 
 --- 
 
-## Deployment Summary 
+## Deployment Summary
 
-| Component | Details | 
-
-|------------|---------| 
-
-| Deployment Platform | Streamlit Community Cloud | 
-
-| Live Application | https://employee-job-satisfaction-ml-predictor.streamlit.app | 
-
-| Runtime Environment | Python 3.11 | 
-
-| Machine Learning Model | Random Forest Classifier | 
-
-| Main Application | `app/app.py` | 
-
-| Serialized Model | `models/best_model.pkl` | 
-
+| Component | Details |
+|-----------|---------|
+| Deployment Platform | Streamlit Community Cloud |
+| Live Application | https://employee-job-satisfaction-ml-predictor.streamlit.app |
+| Runtime Environment | Python 3.11 |
+| Machine Learning Model | Random Forest Classifier |
+| Main Application | `app/app.py` |
+| Serialized Model | `models/best_model.pkl` |
 | Status | Production Deployment |
 
 

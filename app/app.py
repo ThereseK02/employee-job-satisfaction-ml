@@ -26,7 +26,7 @@ if not st.session_state.show_predictor:
     Employee Job Satisfaction Predictor
 </h1>
             <h3 style="font-weight:500; color:#334155; margin-bottom:1.5rem;">
-                Predict workplace satisfaction using machine learning.
+               Predict employee job satisfaction using machine learning.
             </h3>
             <p style="font-size:1.1rem; line-height:1.8; max-width:820px; margin:auto; color:#1f2937;">
                 An interactive application that estimates employee job satisfaction

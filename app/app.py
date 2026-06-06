@@ -3,16 +3,69 @@ import streamlit as st
 import joblib
 from pathlib import Path
 import numpy as np
+
 # ---------------------------------------------------
-# Page Configuration
+# Landing Page State
 # ---------------------------------------------------
 
-st.set_page_config(
-    page_title="Employee Job Satisfaction Predictor",
-    page_icon="📊",
-    layout="centered"
-)
+if "show_predictor" not in st.session_state:
+    st.session_state.show_predictor = False
 
+# ---------------------------------------------------
+# Landing Page
+# ---------------------------------------------------
+if not st.session_state.show_predictor:
+    st.markdown(
+        """
+        <div style="background: linear-gradient(135deg, #f0e7d1, #e3d4b2); padding:3rem; border-radius:18px; text-align:center; box-shadow:0 12px 30px rgba(0,0,0,0.18); width:100%; max-width:950px; margin:auto;">
+      <h2 style="color:#375a7f; margin-bottom:0.5rem;">
+    Welcome to
+</h2>
+
+<h1 style="font-size:2.8rem; color:#0f2747; margin-bottom:0.75rem;">
+    Employee Job Satisfaction Predictor
+</h1>
+            <h3 style="font-weight:500; color:#334155; margin-bottom:1.5rem;">
+                Predict workplace satisfaction using machine learning.
+            </h3>
+            <p style="font-size:1.1rem; line-height:1.8; max-width:820px; margin:auto; color:#1f2937;">
+                An interactive application that estimates employee job satisfaction
+                using information about the workplace, workload, work-life balance, and employee wellbeing.
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        """
+        <style>
+        div.stButton > button {
+            background-color: #7cb342;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 0.7rem 1.8rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        div.stButton > button:hover {
+            background-color: #689f38;
+            color: white;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.write("")
+
+    if st.button("Start Prediction"):
+        st.session_state.show_predictor = True
+        st.rerun()
+
+    st.stop()
 # ---------------------------------------------------
 # Load Trained Model
 # ---------------------------------------------------
@@ -30,12 +83,14 @@ except Exception as e:
     st.error("Model file was found, but it could not be loaded.")
     st.exception(e)
 
+st.divider()
+
 st.markdown("""
 <style>
 
 /* Slider active track */
 .stSlider > div > div > div > div {
-    background-color: #1f77b4;
+    background-color: #7cb342;
 }
 
 /* Slider handle */
@@ -45,16 +100,18 @@ st.markdown("""
 }
 
 /* Optional: button styling */
-.stButton > button {
-    background-color: #1f77b4;
+div.stButton > button:first-child {
+    background-color: #7cb342;
     color: white;
-    border-radius: 8px;
     border: none;
-    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    padding: 0.7rem 1.8rem;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
-.stButton > button:hover {
-    background-color: #155a8a;
+div.stButton > button:first-child:hover {
+    background-color: #689f38;
     color: white;
 }
 

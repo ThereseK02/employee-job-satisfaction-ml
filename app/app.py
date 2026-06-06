@@ -29,8 +29,8 @@ if not st.session_state.show_predictor:
                Predict employee job satisfaction using machine learning.
             </h3>
             <p style="font-size:1.1rem; line-height:1.8; max-width:820px; margin:auto; color:#1f2937;">
-                An interactive application that estimates employee job satisfaction
-                using information about the workplace, workload, work-life balance, and employee wellbeing.
+                An interactive application that predicts employee job satisfaction
+using workplace, workload, work-life balance, and wellbeing factors.
             </p>
         </div>
         """,

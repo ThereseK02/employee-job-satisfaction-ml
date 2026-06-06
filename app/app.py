@@ -61,7 +61,7 @@ using workplace, workload, work-life balance, and wellbeing factors.
 
     st.write("")
 
-    if st.button("Start Prediction"):
+    if st.button("Launch Predictor"):
         st.session_state.show_predictor = True
         st.rerun()
 

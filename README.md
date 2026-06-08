@@ -76,17 +76,19 @@ The Employee Job Satisfaction Prediction application is publicly deployed on Str
 ## Project Highlights
 
 
-- End-to-end machine learning workflow
+- Machine Learning pipeline with Random Forest, XGBoost, LightGBM, SVM, and Logistic Regression
 
-- Class imbalance handling using Class Weights and SMOTE
+- SMOTE balancing and feature engineering
 
-- Hyperparameter optimization using RandomizedSearchCV
+- Hyperparameter tuning and model evaluation
 
-- Ensemble learning with Random Forest, XGBoost, and LightGBM
+- SHAP explainability analysis
 
-- Explainable AI using SHAP
+- Real-time prediction interface using Streamlit
 
-- Streamlit deployment preparation
+- Public cloud deployment on Streamlit Community Cloud
+
+- Production-ready machine learning application
 
 
 
